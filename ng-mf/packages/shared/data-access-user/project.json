@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "packages/shared/data-access-user/src",
+  "prefix": "ng-mf",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/shared/data-access-user"],
+      "options": {
+        "jestConfig": "packages/shared/data-access-user/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/shared/data-access-user/**/*.ts",
+          "packages/shared/data-access-user/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

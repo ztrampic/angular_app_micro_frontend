@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "dashboard": "packages/dashboard",
+    "dashboard-e2e": "packages/dashboard-e2e",
+    "login": "packages/login",
+    "login-e2e": "packages/login-e2e",
+    "shared-data-access-user": "packages/shared/data-access-user"
+  }
+}
