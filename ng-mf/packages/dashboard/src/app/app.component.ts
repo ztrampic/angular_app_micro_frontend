@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   isLoggedIn$ = this.userService.isUserLoggedIn$;
   constructor(private userService: UserService, private router: Router) {}
   ngOnInit() {
+    console.log("--init")
     this.isLoggedIn$
       .pipe(distinctUntilChanged())
       .subscribe(async (loggedIn: boolean) => {
